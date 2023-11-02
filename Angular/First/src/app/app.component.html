@@ -1,0 +1,21 @@
+<div class="myFirst">
+  
+  <p>{{ name }}</p>
+
+  <button
+    style="
+      margin-top: 30px;
+      margin-left: 30px;
+      background-color: #125699;
+      border-radius: 3px;
+    "
+
+    (click)="getDetails()"
+  >
+    Get Details
+  </button>
+  <app-first-new (dataEvent)="printData($event)" [title] = "title"/>
+
+
+  <app-user-details-api (userDetailsEvent)="setUserDetails($event)" ></app-user-details-api>
+</div>

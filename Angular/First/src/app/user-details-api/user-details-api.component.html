@@ -1,0 +1,27 @@
+<style>
+
+    .table{
+        width: auto;
+        height: fit-content;
+    }
+    .common{
+        border-radius: 5px;
+        margin: 10px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .nami{
+        background-color: #f09b3a;
+    }
+
+</style>
+
+<div style="height: 500px; margin : 20px 10px ; background-color: aquamarine;">
+
+    <button class = "nami common" (click)="setUserdetails()">Api Call</button>
+    
+    <p>{{userData|json}}</p>
+
+
+</div>
